@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('dificultad2.png'); 
+    background-size: cover; 
+    background-position: center 50px; 
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+header 
+{
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    padding: 0;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.tit {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    /* padding: 0;  */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.download-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.download-box {
+    flex: 1;
+    max-width: 500px; 
+    min-height: 300px; 
+    background-color: rgb(181, 169, 160);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px; 
+    transition: transform 0.3s;
+}
+
+.download-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ANIMACIONES DE ENTRADA */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.windows {
+    border-left: 5px solid #007bff;
+    animation: slideInLeft 1.5s ease-out;
+}
+
+.android {
+    border-left: 5px solid #4CAF50;
+    animation: slideInRight 1.5s ease-out;
+}
+
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 40px; 
+    animation: slideInUp 1s ease-out;
+}
+
+
+.image-box {
+    max-width: 500px;
+    min-height: 300px; 
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.image-box img 
+{
+
+    max-width: 100%; 
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.download-button 
+{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover 
+{
+    background-color: lightgreen;
+    color: black;
+}
+
+.foot 
+{
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000; 
+}
+.hh
+{
+    color:brown; text-align: center;
+}
